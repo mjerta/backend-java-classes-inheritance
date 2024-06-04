@@ -6,7 +6,6 @@ public class VisaCard extends CreditCard {
 
   @Override
   public void pay(int amount) {
-    super.pay(amount);
-    
+    super.pay((int) (amount * 0.9)); // With this the amount of debt will be added with a discount
   }
 }
